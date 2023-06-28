@@ -12,10 +12,17 @@
   border: none;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
 }
+.menu-list {
+  text-decoration: none;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .sidenav {
   width: 200px;
-  font-family: sofia-pro;
 }
 
 .sidenav .mat-toolbar {
