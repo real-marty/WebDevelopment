@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "kan-ban-c57ac"
+  },
+  "targets": {
+    "kan-ban-c57ac": {
+      "hosting": {
+        "kanban": [
+          "kan-ban-c57ac"
+        ]
+      }
+    }
   }
 }
