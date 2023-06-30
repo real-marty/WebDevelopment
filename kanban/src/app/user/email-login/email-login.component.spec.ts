@@ -1,16 +1,16 @@
 // import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-// import { LoginPageComponent } from './login-page.component';
+// import { EmailLoginComponent } from './email-login.component';
 
-// describe('LoginPageComponent', () => {
-//   let component: LoginPageComponent;
-//   let fixture: ComponentFixture<LoginPageComponent>;
+// describe('EmailLoginComponent', () => {
+//   let component: EmailLoginComponent;
+//   let fixture: ComponentFixture<EmailLoginComponent>;
 
 //   beforeEach(() => {
 //     TestBed.configureTestingModule({
-//       declarations: [LoginPageComponent]
+//       declarations: [EmailLoginComponent]
 //     });
-//     fixture = TestBed.createComponent(LoginPageComponent);
+//     fixture = TestBed.createComponent(EmailLoginComponent);
 //     component = fixture.componentInstance;
 //     fixture.detectChanges();
 //   });
