@@ -1,0 +1,32 @@
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(center, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 7rem;
+  h2 {
+    margin: 5rem;
+  }
+}
+
+.travelly,
+.elena-joy {
+  flex: 1 1 40rem;
+}
+@media screen and (max-width: 750px) {
+  .projects {
+    width: 100%;
+  }
+  .travelly,
+  .elena-joy {
+    flex: 1 1 60rem;
+  }
+  .travelly img {
+    max-width: 100%;
+  }
+  .elena-joy img {
+    max-width: 100%;
+  }
+}

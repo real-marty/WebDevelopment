@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h5,
+h4 {
+  font-size: 2.85rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  padding: 1rem 2rem;
+  background: rgb(17, 17, 17);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+button:hover {
+  background: white;
+  color: black;
+}
+/*Nav setion with hero*/
+#main-head {
+  position: sticky;
+  top: 0%;
+  z-index: 3;
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+nav {
+  flex-wrap: wrap;
+  width: 90%;
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+#logo {
+  font-family: "Comforter Brush";
+  font-weight: lighter;
+  flex: 2 1 40rem;
+}
+.hero-setion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), transparent),
+    url("./Imgs/lending-page.jpg");
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(241, 241, 241);
+  font-weight: lighter;
+}
+.hero-setion h3 {
+  padding: 2rem;
+}
+#locations {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), transparent),
+    url("./img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
+.locations-head h3 {
+  padding: 3rem 0rem;
+}
+.cloud {
+  pointer-events: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.moving-cloud-1 {
+  animation: CloudAnimation 5s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  z-index: -1;
+  top: 10%;
+  opacity: 0.8;
+}
+@keyframes CloudAnimation {
+  from {
+    transform: translate(5%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+.benefits-head {
+  background: rgb(17, 17, 17);
+  color: rgb(241, 241, 241);
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.benefits-head h3 {
+  padding: 3rem 0rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  text-align: center;
+}
+.card {
+  box-shadow: 0px 10px 10px rgba(17, 17, 17, 0.151),
+    0px 20px 20px rgba(17, 17, 17, 0.226);
+  color: rgb(17, 17, 17);
+  flex: 1 1 25rem;
+  min-height: 30vh;
+  margin: 2rem 5rem;
+}
+.card img {
+  max-width: 20%;
+  margin: 2rem;
+}
+.card-icon {
+  background: rgb(17, 17, 17);
+}
+.card h4 {
+  padding-top: 3rem;
+}
+
+#contact {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), transparent),
+    url("./Imgs/contacBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.form-wrapper {
+  background: rgba(211, 211, 211, 0.3);
+  width: 60%;
+  border-radius: 10px;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+.form-wrapper input {
+  border: none;
+}
+.form-wrapper label {
+  margin: 0rem 2rem;
+}
+footer {
+  background-color: rgb(17, 17, 17);
+  color: rgb(241, 241, 241);
+}
+footer h5 {
+  font-weight: normal;
+  flex: 1 1 10rem;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 5vh;
+  flex-wrap: wrap;
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  flex: 2 1 10rem;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 60%;
+  }
+  @keyframes CloudAnimation {
+    from {
+      transform: translate(15%, -15%);
+    }
+    to {
+      transform: translate(10%, -10%);
+    }
+  }
+}
+@media screen and (max-width: 890px) {
+  #logo {
+    text-align: center;
+    padding: 2rem;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .locations-head h3 {
+    margin-top: 10rem;
+    background: rgba(255, 255, 255, 0.463);
+    text-align: center;
+  }
+  #logo {
+    text-align: center;
+    padding: 2rem;
+  }
+  .moving-cloud-1 {
+    top: -10%;
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    top: 3%;
+    z-index: -2;
+  }
+  #locations {
+    background-position: right;
+    z-index: -2;
+  }
+}

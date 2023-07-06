@@ -1,0 +1,165 @@
+.main-head {
+  width: 90%;
+  margin: 0 0 0 auto;
+}
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 50%;
+  flex-wrap: wrap;
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+    h1 {
+      margin: 2rem;
+    }
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
+}
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+  h2 {
+    font-size: 8rem;
+    padding-top: 2rem;
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  h3 {
+    font-size: 6rem;
+    padding: 2rem 0rem;
+  }
+  p {
+    padding-top: 2rem;
+    color: $gray-text;
+  }
+}
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  z-index: -1;
+}
+.intro-social {
+  margin-top: 4rem;
+  a {
+    margin-right: 5rem;
+  }
+}
+.active {
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 2rem;
+  background: $gray-text;
+}
+.intro-text,
+.intro-images {
+  flex: 1 1 40rem;
+}
+#plant-left {
+  animation: plant 3s ease infinite alternate;
+}
+#plant-right {
+  animation: plant2 3s ease infinite alternate 0.5s;
+}
+#me {
+  animation: me 10s ease infinite alternate 0.5s;
+  transform-origin: bottom;
+}
+#clock-arrow {
+  animation: clock 1.5s infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes me {
+  from {
+    transform: rotateZ(-10deg);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}
+@keyframes plant2 {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 1320px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-head {
+    width: 100%;
+  }
+  html {
+    font-size: 45%;
+  }
+  svg {
+    height: 60%;
+  }
+  nav {
+    margin: 2rem 0rem;
+    .logo {
+      @include flex(center, center, column);
+      flex: 1 1 20rem;
+      margin-top: 2rem;
+    }
+    ul {
+      flex: 1 1 60rem;
+      margin: 2rem 0rem;
+    }
+  }
+  .intro-text {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .intro-social {
+    @include flex(center, center, flex);
+  }
+  .intro-images {
+    text-align: center;
+  }
+  form {
+    padding: 0rem;
+    width: 100%;
+  }
+}
