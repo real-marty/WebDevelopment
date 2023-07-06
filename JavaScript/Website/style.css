@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background: #111111;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+main {
+  position: absolute;
+}
+#logo {
+  color: white;
+  font-family: "Abril Fatface", sans-serif;
+}
+.nav-header {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0rem;
+  z-index: 2;
+  position: relative;
+}
+.line1,
+.line2 {
+  width: 2.6rem;
+  height: 0.2rem;
+  margin: 0.3rem;
+  background: white;
+  pointer-events: none;
+}
+.slide {
+  min-height: 90vh;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #111111;
+}
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-basis: 25rem;
+  padding-left: 5rem;
+  position: relative;
+}
+.hero-img {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  flex-basis: 25rem;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fashion-span {
+  color: rgb(255, 139, 93);
+}
+.mountain-span {
+  color: rgb(93, 117, 255);
+}
+.hike-span {
+  color: rgb(55, 138, 47);
+}
+.hero-desc h2 {
+  font-family: "abril fatface";
+  font-size: 3.5rem;
+}
+.hero-desc p {
+  padding: 3rem 0rem;
+  font-size: 1.4rem;
+  color: rgb(177, 177, 177);
+}
+.explore {
+  padding: 0.8rem 2rem;
+  background: none;
+  border: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+.burger {
+  cursor: pointer;
+}
+.nav-links {
+  font-size: 4rem;
+  flex-basis: 30rem;
+}
+.contact {
+  flex-basis: 30rem;
+}
+.nav-links h3 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+.contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+.contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background-color: #111111;
+  left: 0;
+  top: -15%;
+}
+.cursor {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+  transition-property: background, transform;
+  transform-origin: 75% 75%;
+}
+.cursor.nav-active {
+  background: rgb(93, 117, 255);
+  transform: scale(3);
+}
+.cursor.explore-active {
+  background: white;
+  transform: scale(3);
+}
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 0.35rem;
+  transform: translate(-50%, -50%);
+}
+.title {
+  position: relative;
+  overflow: hidden;
+}
+.title-swipe {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  mix-blend-mode: darken;
+  transform: translateY(100%);
+}
+.t-swipe1 {
+  background: rgb(93, 117, 255);
+}
+.t-swipe2 {
+  background: rgb(55, 138, 47);
+}
+.t-swipe3 {
+  background: rgb(255, 139, 93);
+}
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+/* Remove the scroll event in menu */
+body.hide {
+  overflow: hidden;
+}
+/* Other pages */
+.fashion1,
+.fashion2,
+.fashion3 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.fashion-img {
+  height: 85vh;
+  flex-basis: 30rem;
+}
+.fashion-text {
+  flex: 1;
+  position: relative;
+}
+.fashion-img img {
+  width: 90%;
+  margin: auto;
+  object-fit: cover;
+}
+.fashion-text h1 {
+  padding-bottom: 3rem;
+  font-size: 5rem;
+}
+.fashion1 h1 {
+  color: rgb(255, 139, 93);
+}
+.fashion2 h1 {
+  color: rgb(93, 117, 255);
+}
+.fashion3 h1 {
+  color: rgb(55, 138, 47);
+}
+.fashion-text p {
+  font-size: 1.3rem;
+  padding: 2rem 2rem 0rem 0rem;
+  margin-bottom: 10rem;
+}
+.fashion-nr {
+  color: rgba(255, 255, 255, 0.348);
+  font-size: 15rem;
+  position: absolute;
+  left: 94%;
+  top: 10%;
+}
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+.swipe1 {
+  background: rgb(167, 110, 231);
+  z-index: 5;
+}
+.swipe2 {
+  background: rgb(86, 124, 228);
+  z-index: 4;
+}
+.swipe3 {
+  background: rgb(255, 139, 93);
+  z-index: 3;
+}
+@media screen and (max-width: 1500px) {
+  .hero-img {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-desc {
+    padding: 0;
+  }
+  .hero-desc h2 {
+    font-size: 2rem;
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .hero-desc p {
+    padding: 1rem;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .hero-img {
+    padding-top: 1rem;
+  }
+  .hero-img img {
+    width: 90%;
+    object-fit: cover;
+  }
+  .explore {
+    width: 40%;
+    margin: auto;
+  }
+  .fashion-text p {
+    padding: 0rem 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .fashion-text h1 {
+    padding-bottom: 1rem;
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 3rem;
+  }
+  .fashion-nr {
+    font-size: 12rem;
+    position: absolute;
+    left: 65%;
+    top: 20%;
+  }
+  .detail-slide {
+    width: 100%;
+  }
+  .fashion-img {
+    height: 70vh;
+    flex-basis: 40rem;
+  }
+  .fashion-img img {
+    object-position: top;
+    height: 70vh;
+    margin: auto;
+    object-fit: cover;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-links {
+    padding-top: 6rem;
+    text-align: center;
+  }
+  .nav-links h3 {
+    font-size: 2.3rem;
+  }
+  .contact h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .contact p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+}
