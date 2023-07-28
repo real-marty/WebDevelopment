@@ -17,24 +17,30 @@
     >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Recipes</a>
+          <a class="nav-link" href="#" (click)="onChangePage('recipes')"
+            >Recipes</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Shopping List</a>
+          <a class="nav-link" href="#" (click)="onChangePage('shopping-list')"
+            >Shopping List</a
+          >
         </li>
       </ul>
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle manage-link"
             href="#"
             id="navbarDropdownMenuLink"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            appDropdown
           >
             Manage
           </a>
+
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#">Save Data</a></li>
             <li><a class="dropdown-item" href="#">Fetch Data</a></li>
