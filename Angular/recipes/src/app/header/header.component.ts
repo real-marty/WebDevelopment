@@ -7,11 +7,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   collapsed = true;
-  recipesPageShown: string = 'recipes';
-  @Output() pageShown = new EventEmitter<string>();
-
-  onChangePage(pageShownString: string) {
-    this.recipesPageShown = pageShownString;
-    this.pageShown.emit(this.recipesPageShown);
-  }
 }

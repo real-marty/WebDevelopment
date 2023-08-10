@@ -16,34 +16,34 @@
       (window:resize)="collapsed = true"
     >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#" (click)="onChangePage('recipes')"
-            >Recipes</a
-          >
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/recipes">Recipes</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" (click)="onChangePage('shopping-list')"
-            >Shopping List</a
-          >
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/shopping-list">Shopping List</a>
         </li>
       </ul>
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle manage-link"
-            href="#"
             id="navbarDropdownMenuLink"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            style="cursor: pointer"
             appDropdown
           >
             Manage
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Save Data</a></li>
-            <li><a class="dropdown-item" href="#">Fetch Data</a></li>
+            <li>
+              <a class="dropdown-item" style="cursor: pointer">Save Data</a>
+            </li>
+            <li>
+              <a class="dropdown-item" style="cursor: pointer">Fetch Data</a>
+            </li>
           </ul>
         </li>
       </ul>
