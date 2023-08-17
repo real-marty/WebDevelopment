@@ -36,6 +36,7 @@
             </button>
 
             <button
+              *ngIf="editMode"
               class="btn btn-danger me-2 mt-2"
               (click)="onDelete()"
               type="button"
